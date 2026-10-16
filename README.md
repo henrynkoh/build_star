@@ -1,10 +1,27 @@
-# Build Hub: Construction Project Hub
+# Build Star: Daily Amazon Affiliate Video System
 
-Build Hub is a static construction-planning website that organizes a residential build into 15 workflow steps. It combines material and labor estimates, supplier information, Amazon affiliate product picks, and a 60-video Shorts Studio. An optional macOS-oriented Python pipeline renders and uploads YouTube Shorts.
+Build Star duplicates the Construction Project Hub and adds a daily, compliance-first affiliate-video workflow for the Build Smart Tools & Materials channel. It selects one eligible product from Amazon Tools & Home Improvement using public Best Sellers Rank evidence, creates an original vertical video, and uploads it after checks pass.
 
-Repository: https://github.com/henrynkoh/build_hub
+Repository: https://github.com/henrynkoh/build_star
 
-[![Open Build Hub Landing Page](https://img.shields.io/badge/OPEN-LANDING_PAGE-238636?style=for-the-badge&logo=githubpages&logoColor=white)](https://henrynkoh.github.io/build_hub/)
+[![Open Build Star Landing Page](https://img.shields.io/badge/OPEN-LANDING_PAGE-238636?style=for-the-badge&logo=githubpages&logoColor=white)](https://henrynkoh.github.io/build_star/)
+
+## Daily Build Star Routine
+
+At 12:00 PM America/Los_Angeles every day:
+
+1. Inspect Amazon Tools & Home Improvement Best Sellers and record the public category rank, ASIN, timestamp, and source URL.
+2. Select the highest-ranked eligible product not recently featured. Never claim exact unit sales unless Amazon displays them.
+3. Use only product media that Amazon or the rights holder permits for affiliate use. Do not republish an Amazon listing or ad wholesale.
+4. Write original narration and on-screen copy based on verified specifications. Avoid unsupported performance, quality, availability, or bestseller claims.
+5. Create one vertical affiliate video with the tracking tag `buildsmartpic-20`.
+6. Include the exact disclosure: `As an Amazon Associate I earn from qualifying purchases.`
+7. Mark paid promotion, AI use, and not made for kids in YouTube Studio.
+8. Upload Public only after copyright and platform checks show no issues.
+9. Log the product, evidence, affiliate URL, video URL, and outcome.
+
+See [automation/DAILY_WORKFLOW.md](automation/DAILY_WORKFLOW.md) for the operating specification.
+
 
 ## Highlights
 
@@ -19,8 +36,8 @@ Repository: https://github.com/henrynkoh/build_hub
 ## Quick Start
 
 ```bash
-git clone https://github.com/henrynkoh/build_hub.git
-cd build_hub
+git clone https://github.com/henrynkoh/build_star.git
+cd build_star
 python3 -m http.server 8000
 ```
 
@@ -36,7 +53,7 @@ Read next:
 ## Project Structure
 
 ```text
-build_hub/
+build_star/
 ├── index.html
 ├── step-01.html ... step-15.html
 ├── affiliate.html
